@@ -24,7 +24,6 @@ class Test extends Phaser.Scene {
 
     update() {
         // yes, each of these keyboard checks uses a different syntax 🤷🏻‍♂️
-
         if(Phaser.Input.Keyboard.JustDown(this.cursors.space)) {
             let cross = this.add.sprite(width / 5, height, 'cross').setScale(2)
             cross.tint = 0xFACADE
@@ -43,7 +42,6 @@ class Test extends Phaser.Scene {
             this.crossGroup.add(cross)
         }
 
-        // checkDown
         if(this.input.keyboard.checkDown(this.cursors.space, this.keyDelay)) {
             let cross = this.add.sprite(width / 5 * 4, height, 'cross').setScale(2)
             cross.tint = 0xAAFF88
