@@ -16,10 +16,12 @@ class Test extends Phaser.Scene {
         this.crossGroup = this.add.group()
 
         // set key delay (in ms for checkDown method)
-        this.keyDelay = 350
+        this.keyDelay = 550
 
         // GUI text
         this.childCount = this.add.text(width / 2, 32, '').setOrigin(0.5)
+
+        document.getElementById('instructions').innerHTML = 'Press/hold SPACE</br>Left to right: JustDown | JustUp | isDown | keyDelay'
     }
 
     update() {
