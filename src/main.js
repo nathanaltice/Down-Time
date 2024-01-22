@@ -5,7 +5,7 @@
 
 let config = {
     parent: 'game-canvas',
-    type: Phaser.WEBGL,
+    type: Phaser.WEBGL,     // for tint capabilities
     width: 480,
     height: 640,
     scene: [ Test ]

@@ -3,6 +3,11 @@ class Test extends Phaser.Scene {
         super('testScene')
     }
 
+    init() {
+        // set key delay (in ms for checkDown method)
+        this.keyDelay = 550
+    }
+
     preload() {
         this.load.path = 'assets/'
         this.load.image('cross', 'cross.png')
@@ -14,9 +19,6 @@ class Test extends Phaser.Scene {
 
         // create group to handle all cross assets
         this.crossGroup = this.add.group()
-
-        // set key delay (in ms for checkDown method)
-        this.keyDelay = 550
 
         // GUI text
         this.childCount = this.add.text(width / 2, 32, '').setOrigin(0.5)
