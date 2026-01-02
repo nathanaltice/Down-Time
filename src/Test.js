@@ -21,9 +21,10 @@ class Test extends Phaser.Scene {
         this.crossGroup = this.add.group()
 
         // GUI text
-        this.childCount = this.add.text(width / 2, 32, '').setOrigin(0.5)
+        this.childCount = this.add.text(width / 2, 32, '').setOrigin(0.5).setDepth(100)
+        this.guide = this.add.text(width / 2, height - 32, 'JustDown | JustUp | isDown | keyDelay').setOrigin(0.5).setDepth(100)
 
-        document.getElementById('instructions').innerHTML = 'Press/hold SPACE</br>Left to right: JustDown | JustUp | isDown | keyDelay'
+        document.getElementById('instructions').innerHTML = 'Press, hold, and release SPACE'
     }
 
     update() {

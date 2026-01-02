@@ -1,6 +1,6 @@
 // Nathan Altice
 // Created: 10/15/23
-// Updated: 1/13/24
+// Updated: 1/2/25
 // Demonstrates object groups and four keyboard input types: JustDown, JustUp, isDown, checkDown
 
 let config = {
